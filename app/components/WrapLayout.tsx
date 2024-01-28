@@ -8,7 +8,7 @@ export default function WrapLayout({
 }) {
   return (
     <div>
-      <div className='sticky top-0 left-0 z-100'>
+      <div className='sticky top-0 left-0 z-100 shadow-lg'>
         <NavBar />
       </div>
       {children}
