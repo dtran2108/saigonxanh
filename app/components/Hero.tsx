@@ -9,7 +9,7 @@ export default function Hero({
 }) {
   return (
     <section
-      className='relative min-h-[500px] w-full'
+      className='relative min-h-[500px] w-full z-10'
       style={{
         backgroundImage: `url(${backgroundImage.src})`,
         backgroundSize: 'cover',

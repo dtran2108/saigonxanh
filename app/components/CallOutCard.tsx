@@ -25,7 +25,7 @@ export default function CallOutCard({
         <h1 className='text-2xl text-white font-medium'>{title}</h1>
         <div className='flex items-center space-x-3 flex-wrap'>
           {buttonLabels?.map((label) => (
-            <CallOutButton label={label} variant='secondary' />
+            <CallOutButton key={label} label={label} variant='secondary' />
           ))}
         </div>
       </div>

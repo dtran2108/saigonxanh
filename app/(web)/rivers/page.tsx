@@ -104,7 +104,7 @@ export default function Page() {
               We believe that our innovative barrier solutions are the key to
               engaging communities and governments in cleaning up our rivers.
               With your support, we can make a real difference. By installing
-              our barriers in the world's most polluted rivers we can gain
+              our barriers in the world&apos;s most polluted rivers we can gain
               crucial insights into river pollution, empowering us to take
               targeted actions on land.
             </p>

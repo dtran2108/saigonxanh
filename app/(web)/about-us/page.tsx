@@ -44,11 +44,11 @@ export default function Page() {
               the ocean. By designing simple trash barriers and operating a
               collection, sorting and up- cycling system, we have created a
               scalable approach to tackling plastic pollution. We are on a
-              mission to install 1,000 barriers throughout Indonesia’s most
+              mission to install 1,000 barriers throughout Indonesia&apos;s most
               polluted rivers and expand SaiGonXanh internationally.
             </p>
             <p>
-              To learn more about the founders' past work,{' '}
+              To learn more about the founders&apos; past work,{' '}
               <span>
                 <Link href='#!'>click here.</Link>
               </span>
@@ -61,8 +61,8 @@ export default function Page() {
           <h1 className='text-medium text-3xl'>Impact achieved:</h1>
           <p className='mt-8'>
             We are scaling rapidly and currently expanding our operation
-            throughout Bali and in Java, Indonesia; the world's most populated
-            island and home to 90 of the world's 1,000 most polluted rivers. We
+            throughout Bali and in Java, Indonesia; the world&apos;s most populated
+            island and home to 90 of the world&apos;s 1,000 most polluted rivers. We
             are also researching an international expansion throughout Asia and
             beyond.
           </p>

@@ -35,7 +35,7 @@ export default function Home() {
           <p className='w-full md:w-6/12 mt-8 text-white font-medium'>
             The Saigon Green Group is committed not only to collecting and
             recycling waste from the rivers in Saigon but also to changing the
-            community's perception of the importance of environmental
+            community&apos;s perception of the importance of environmental
             protection. Through advocating and promoting community actions
             towards sustainability, we aim to expand our influence across
             Vietnam and the world.
