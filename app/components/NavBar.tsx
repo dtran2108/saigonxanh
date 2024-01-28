@@ -12,7 +12,7 @@ export default function NavBar() {
       <div className='flex items-center space-x-8 text-primary font-medium'>
         <Link href='/rivers'>RIVERS</Link>
         <Link href='/clean-ups'>CLEANUPS</Link>
-        <Link href='/about'>ABOUT</Link>
+        <Link href='/about-us'>ABOUT</Link>
         <Link href='/donate'>
           <Button className='rounded-full'>DONATE</Button>
         </Link>
