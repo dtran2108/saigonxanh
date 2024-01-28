@@ -7,7 +7,7 @@ export default function NavBar() {
   return (
     <div className='px-4 py-2 flex items-center justify-between bg-white'>
       <Image src={logo} width={150} height={70} alt='SGX Logo' />
-      <div className='flex items-center space-x-8 text-primary'>
+      <div className='flex items-center space-x-8 text-primary font-medium'>
         <Link href='/rivers'>RIVERS</Link>
         <Link href='/cleanups'>CLEANUPS</Link>
         <Link href='/about'>ABOUT</Link>

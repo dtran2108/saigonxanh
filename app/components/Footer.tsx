@@ -8,6 +8,7 @@ import LinkedIn from '../icons/LinkedIn'
 import Image from 'next/image'
 import SGXLogo from '@/public/images/logos/sgx-logo.svg'
 import OnePercentForPlanet from '@/public/images/logos/1_percent_for_the_planet.svg'
+import RightArrowCircle from '../icons/RightArrowCircle'
 
 export default function Footer() {
   return (
@@ -22,11 +23,15 @@ export default function Footer() {
             placeholder='Email address'
             className='border-transparent border-b-[#FFFFFF] bg-transparent rounded-none placeholder:text-white text-white focus-visible:border-none'
           />
-          <Button className='rounded-full bg-white text-black' size='lg'>
-            Subscribe
+          <Button
+            className='rounded-full bg-white text-black text-lg flex items-center justify-between space-x-6 hover:bg-white pr-2'
+            size='lg'
+          >
+            <span>Subscribe</span>
+            <RightArrowCircle className='text-black' />
           </Button>
         </div>
-        <div className='mt-20 flex items-center justify-between'>
+        <div className='mt-20 flex flex-col md:flex-row items-start md:items-center justify-between flex-wrap space-y-4 md:space-y-0'>
           <div className='flex items-center space-x-4'>
             <Link href='#!'>
               <Instagram className='text-white' />
@@ -41,7 +46,7 @@ export default function Footer() {
               <LinkedIn className='text-white' />
             </Link>
           </div>
-          <div className='flex items-center space-x-6 text-white uppercase'>
+          <div className='flex flex-col md:flex-row items-start md:items-center md:space-x-6 text-white uppercase'>
             <Link href='#!'>RIVERS</Link>
             <Link href='#!'>CLEAN UPS</Link>
             <Link href='#!'>ABOUT US</Link>

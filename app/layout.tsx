@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
-import { Roboto } from 'next/font/google'
+import { Inter, Roboto } from 'next/font/google'
 import './globals.css'
 import WrapLayout from './components/WrapLayout'
 
-const roboto = Roboto({ subsets: ['latin'], weight: '400' })
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Saigon Xanh',
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={roboto.className}>
+      <body className={inter.className}>
         <WrapLayout>{children}</WrapLayout>
       </body>
     </html>
