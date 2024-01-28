@@ -23,11 +23,8 @@ export default function Footer() {
             placeholder='Email address'
             className='border-transparent border-b-[#FFFFFF] bg-transparent rounded-none placeholder:text-white text-white focus-visible:border-none'
           />
-          <Button
-            className='rounded-full bg-white text-black text-lg flex items-center justify-between space-x-6 hover:bg-white pr-2'
-            size='lg'
-          >
-            <span>Subscribe</span>
+          <Button className='rounded-full bg-white text-black text-lg flex items-center justify-between md:space-x-6 space-x-0 hover:bg-white md:px-4 md:pr-2 px-1'>
+            <span className='hidden md:inline-block'>Subscribe</span>
             <RightArrowCircle className='text-black' />
           </Button>
         </div>
@@ -55,7 +52,7 @@ export default function Footer() {
             <Link href='#!'>SUPPORT us</Link>
           </div>
         </div>
-        <div className='mt-20 flex items-center justify-between'>
+        <div className='mt-20 flex items-center justify-between flex-wrap space-y-4 md:space-y-0'>
           <Image
             src={SGXLogo}
             width={200}

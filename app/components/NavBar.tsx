@@ -13,6 +13,17 @@ import {
   NavigationMenuTrigger,
 } from '@/components/ui/navigation-menu'
 import { navigationMenuTriggerStyle } from '@/components/ui/navigation-menu'
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTrigger,
+} from '@/components/ui/sheet'
+import Menu from '../icons/Menu'
+import Instagram from '../icons/Instagram'
+import Tiktok from '../icons/Tiktok'
+import Youtube from '../icons/Youtube'
+import LinkedIn from '../icons/LinkedIn'
 
 export default function NavBar() {
   return (
@@ -20,7 +31,64 @@ export default function NavBar() {
       <Link href='/'>
         <Image src={logo} width={150} height={70} alt='SGX Logo' />
       </Link>
-      <div className='flex items-center space-x-3 text-primary font-medium'>
+      <Sheet>
+        <SheetTrigger asChild className='block md:hidden'>
+          <Button variant='ghost'>
+            <Menu />
+          </Button>
+        </SheetTrigger>
+        <SheetContent>
+          <SheetHeader className='border-b pb-4'>
+            <Link href='/'>
+              <Image src={logo} width={150} height={70} alt='SGX Logo' />
+            </Link>
+          </SheetHeader>
+          <div className='mt-8'>
+            <ul className='text-primary font-medium'>
+              <li>
+                <Link href='/rivers' legacyBehavior passHref>
+                  RIVERS
+                </Link>
+              </li>
+              <li>
+                <Link href='/clean-ups' legacyBehavior passHref>
+                  CLEANUPS
+                </Link>
+              </li>
+              <li>
+                <Link href='/about-us' legacyBehavior passHref>
+                  ABOUT US
+                </Link>
+              </li>
+              <li>
+                <Link href='/partners' legacyBehavior passHref>
+                  PARTNERS
+                </Link>
+              </li>
+            </ul>
+            <Link href='/donate'>
+              <Button size='sm' className='hover:bg-primary mt-4'>
+                DONATE
+              </Button>
+            </Link>
+            <div className='flex items-center space-x-4 mt-8'>
+              <Link href='#!'>
+                <Instagram className='text-primary' />
+              </Link>
+              <Link href='#!'>
+                <Tiktok className='text-primary' />
+              </Link>
+              <Link href='#!'>
+                <Youtube className='text-primary' />
+              </Link>
+              <Link href='#!'>
+                <LinkedIn className='text-primary' />
+              </Link>
+            </div>
+          </div>
+        </SheetContent>
+      </Sheet>
+      <div className='hidden md:flex items-center space-x-3 text-primary font-medium'>
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>

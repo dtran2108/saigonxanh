@@ -17,7 +17,9 @@ export default function Hero({
       }}
     >
       <div className='relative container z-10 flex items-center justify-center min-h-[500px]'>
-        <h1 className='text-5xl text-center text-white font-medium'>{title}</h1>
+        <h1 className='md:text-4xl text-xl text-center text-white font-medium'>
+          {title}
+        </h1>
       </div>
       <div className='bg-black/50 absolute top-0 left-0 w-full h-full z-5'></div>
     </section>

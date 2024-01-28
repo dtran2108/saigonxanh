@@ -29,10 +29,10 @@ export default function Home() {
       >
         <div className='absolute w-full h-full top-0 left-0 bg-gradient-to-t from-[#049F58] to-transparent z-5'></div>
         <div className='relative container flex flex-col justify-center z-10 min-h-screen'>
-          <h1 className='text-white font-bold text-6xl leading-none'>
+          <h1 className='text-white font-bold text-3xl lg:text-6xl leading-none'>
             Protecting rivers <br /> starting in <br /> Vietnam
           </h1>
-          <p className='w-full md:w-6/12 mt-8 text-white font-medium'>
+          <p className='w-full md:w-6/12 mt-8 text-white md:font-medium'>
             The Saigon Green Group is committed not only to collecting and
             recycling waste from the rivers in Saigon but also to changing the
             community&apos;s perception of the importance of environmental
@@ -45,12 +45,12 @@ export default function Home() {
       <div className='bg-[#049F58] py-6'>
         <div className='container grid grid-cols-1 md:grid-cols-2 gap-6 text-white'>
           <div>
-            <p className='text-2xl'>42,582 kg of plastics collected</p>
-            <p className='text-2xl'>32 villages cleaned</p>
+            <p className='md:text-2xl'>42,582 kg of plastics collected</p>
+            <p className='md:text-2xl'>32 villages cleaned</p>
           </div>
           <div>
-            <p className='text-2xl'>12 Barriers installed</p>
-            <p className='text-2xl'>371 community cleanups organized</p>
+            <p className='md:text-2xl'>12 Barriers installed</p>
+            <p className='md:text-2xl'>371 community cleanups organized</p>
           </div>
         </div>
       </div>
@@ -141,11 +141,11 @@ export default function Home() {
       <section className='bg-white'>
         <div className='container py-16'>
           <div className='text-center'>
-            <h1 className='text-4xl text-primary font-medium'>
+            <h1 className='text-2xl md:text-4xl text-primary font-medium'>
               Help us install the next 1,000 Barriers to clean the <br />
               world’s most polluted rivers!
             </h1>
-            <p className='text-primary mt-8 text-xl'>
+            <p className='text-primary mt-8 md:text-xl'>
               To achieve this substantial goal, we need your help! <br />
               Here is how you can help us get there:
             </p>

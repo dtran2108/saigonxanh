@@ -51,19 +51,19 @@ export default function Page() {
       />
       <section className='py-16 container'>
         <div>
-          <h1 className='text-primary font-medium text-4xl text-center'>
+          <h1 className='text-primary font-medium text-xl md:text-4xl text-center'>
             We believe one of the simplest ways to clean our ocean is by
             starting in our rivers, where we can still prevent the flow of
             plastic.
           </h1>
-          <p className='mt-8 text-primary text-xl text-center'>
+          <p className='mt-8 text-primary md:text-xl text-center'>
             The Solution — Install Simple Trash Barriers
           </p>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-6 mt-8'>
-          <div className='min-h-[500px] bg-[#B0CDBA] w-full'></div>
+          <div className='min-h-[300px] md:min-h-[500px] bg-[#B0CDBA] w-full'></div>
           <div
-            className='min-h-[500px] bg-[#B0CDBA] w-full'
+            className='min-h-[300px] md:min-h-[500px] bg-[#B0CDBA] w-full'
             style={{
               backgroundImage: `url(${phuongMyChi.src})`,
               backgroundSize: 'cover',
@@ -71,7 +71,7 @@ export default function Page() {
             }}
           ></div>
           <div
-            className='min-h-[500px] bg-[#B0CDBA] w-full'
+            className='min-h-[300px] md:min-h-[500px] bg-[#B0CDBA] w-full'
             style={{
               backgroundImage: `url(${trashBarrier.src})`,
               backgroundSize: 'cover',
@@ -89,13 +89,13 @@ export default function Page() {
             backgroundPosition: 'center center',
           }}
         ></div>
-        <div className='bg-[#82C341] grid grid-cols-2 gap-4 px-12 md:col-span-1 col-span-2 py-8 md:py-0'>
-          <div className='flex items-center text-primary text-[32px] font-medium col-span-2 justify-start'>
+        <div className='bg-[#82C341] grid grid-cols-2 gap-4 px-12 md:col-span-1 col-span-2 py-8'>
+          <div className='flex items-center text-primary text-2xl md:text-3xl font-medium col-span-2 justify-start'>
             Plastic is now polluting every river <br /> in the world.
           </div>
           <div></div>
           <div className='md:col-span-1 col-span-2 justify-center md:justify-start'>
-            <p className='text-primary text-lg font-medium'>
+            <p className='text-primary'>
               Our mission is clear: to protect and revitalize our waterways. No
               two rivers are the same and while we acknowledge the challenges
               posed by factors like river width, currents, and boat traffic, we
@@ -120,10 +120,10 @@ export default function Page() {
         }}
       >
         <div className='relative container z-10 flex flex-col justify-center min-h-screen'>
-          <h1 className='text-5xl text-white font-medium'>
+          <h1 className='text-3xl lg:text-5xl text-white font-medium'>
             Strategy To Clean Rivers
           </h1>
-          <ul className='text-xl text-white mt-8 leading-loosed list-disc ml-6 font-light'>
+          <ul className='md:text-xl text-white mt-8 leading-loosed list-disc ml-6 font-light'>
             <li>
               We map the sources of river pollution to optimise the placement of
               our barriers

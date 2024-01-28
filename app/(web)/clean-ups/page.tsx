@@ -21,10 +21,10 @@ export default function Page() {
       />
       <section className='py-16 container'>
         <div className='flex flex-col items-center justify-center'>
-          <h1 className='text-primary font-medium text-4xl text-center'>
+          <h1 className='text-primary font-medium text-2xl md:text-4xl text-center'>
             We have identified over 350 illegal landfills in Bali.
           </h1>
-          <p className='mt-8 text-primary text-xl text-center'>
+          <p className='mt-8 text-primary md:text-xl text-center'>
             A lot of this is due to the lack of waste management and recycling
             infrastructure. Although Indonesia has pledged to reduce 70% of
             plastic pollution it emits into the ocean by 2025, we are continuing
@@ -38,7 +38,7 @@ export default function Page() {
         <h1 className='text-primary font-medium text-2xl'>
           Our biggest emergency cleanups to date:
         </h1>
-        <div className='grid grid-cols-2 md:grid-cols-5 mt-8 gap-6'>
+        <div className='grid grid-cols-2 md:grid-cols-5 mt-8 gap-2 md:gap-6'>
           {Array.from({ length: 15 }, (_, i) => i + 1).map((item) => (
             <Image
               src={`/images/emergency-${item.toString()}.png`}
@@ -60,12 +60,12 @@ export default function Page() {
           }}
         ></div>
         <div className='bg-[#82C341] grid grid-cols-2 gap-4 px-12 md:col-span-1 col-span-2 py-8 md:py-0'>
-          <div className='flex items-center text-primary text-[32px] font-medium col-span-2 justify-start'>
+          <div className='flex items-center text-primary text-3xl font-medium col-span-2 justify-start'>
             Education + Outreach
           </div>
           <div></div>
           <div className='md:col-span-1 col-span-2 justify-center md:justify-start'>
-            <p className='text-primary text-lg font-medium'>
+            <p className='text-primary md:text-lg font-medium'>
               Community outreach is an essential part of our mission to combat
               plastic pollution. We organize education sessions to engage
               communities and encourage better waste management. We host
@@ -79,10 +79,10 @@ export default function Page() {
       </section>
       <section className='grid grid-cols-2 md:min-h-screen'>
         <div className='bg-[#EFEFEF] px-12 md:col-span-1 col-span-2 py-16'>
-          <h1 className='text-primary text-[32px] font-medium'>
+          <h1 className='text-primary text-3xl font-medium'>
             Thank you to our volunteers!
           </h1>
-          <p className='text-primary text-lg font-medium mt-8'>
+          <p className='text-primary md:text-lg font-medium mt-8'>
             Since launching our weekly volunteer cleanup programs in April 2022,
             we have accomplished over 23,210 volunteer hours and removed over
             534,728kg of non-organic trash! Through our weekly volunteer
@@ -100,7 +100,7 @@ export default function Page() {
         ></div>
       </section>
       <section className='container py-20'>
-        <h1 className='text-primary font-medium text-4xl text-center mb-24'>
+        <h1 className='text-primary font-medium text-2xl md:text-4xl text-center mb-24'>
           Help us identify and clean illegal landfills throughout Indonesia!
         </h1>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>

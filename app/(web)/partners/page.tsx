@@ -128,10 +128,10 @@ export default function Page() {
       />
       <section className='py-16 container'>
         <div className='flex flex-col items-center justify-center'>
-          <h1 className='text-primary font-medium text-4xl text-center'>
+          <h1 className='text-primary font-medium text-2xl md:text-4xl text-center'>
             Partner with us!
           </h1>
-          <p className='mt-8 text-primary text-xl text-center'>
+          <p className='mt-8 text-primary md:text-xl text-center'>
             Our work to end river and marine plastic pollution is 100% funded by
             our incredible sponsors and partners. Plastic pollution is not going
             to fix itself alone and we need the help of many more partners to
@@ -144,7 +144,7 @@ export default function Page() {
         </div>
       </section>
       <section className='container py-16 text-primary'>
-        <h1 className='text-4xl font-medium'>Our Supporters</h1>
+        <h1 className='text-2xl md:text-4xl font-medium'>Our Supporters</h1>
         <p className='mt-2'>
           Our success also comes from our sponsors and sponsoring brands
         </p>
@@ -159,21 +159,23 @@ export default function Page() {
                 alt={partner.image}
               />
               <div className='mt-8 flex flex-col items-center space-x-3'>
-                <h2 className='text-2xl'>{partner.location}</h2>
-                <p className='text-xl'>Partner: {partner.partner}</p>
+                <h2 className='text-xl md:text-2xl text-center'>
+                  {partner.location}
+                </h2>
+                <p className='md:text-xl'>Partner: {partner.partner}</p>
               </div>
             </div>
           ))}
         </div>
       </section>
       <section className='container py-16 text-primary'>
-        <h1 className='text-4xl font-medium'>Barrier Partners</h1>
+        <h1 className='text-2xl md:text-4xl font-medium'>Barrier Partners</h1>
         <p className='mt-2'>
           Our barriers can be individually sponsored. Each sponsor allows us to
           place a barrier in one river and clean it every day for one year.
         </p>
         <CallOutButton label='Become a Barrier Partner' />
-        <div className='grid grid-cols-2 md:grid-cols-3 gap-x-32 mt-16'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-32 mt-16'>
           {barrierPartners.map((partner) => (
             <p key={partner} className='text-primary font-medium'>
               {partner}
@@ -182,12 +184,12 @@ export default function Page() {
         </div>
       </section>
       <section className='container py-16 text-primary'>
-        <h1 className='text-4xl font-medium'>Mission Partners</h1>
+        <h1 className='text-2xl md:text-4xl font-medium'>Mission Partners</h1>
         <p className='mt-2'>
           Sponsors of our operations, cleanup, and research work.
         </p>
         <CallOutButton label='Become a Mission Partner' />
-        <div className='grid grid-cols-2 md:grid-cols-3 gap-x-32 mt-16'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-32 mt-16'>
           {missionPartners.map((partner) => (
             <p key={partner} className='text-primary font-medium'>
               {partner}
@@ -197,7 +199,7 @@ export default function Page() {
       </section>
       <section className='py-16 container'>
         <div className='flex flex-col items-center justify-center'>
-          <h1 className='text-primary font-medium text-4xl text-center'>
+          <h1 className='text-primary font-medium text-2xl md:text-4xl text-center'>
             If you are interested in sponsoring our work or have any questions,
             please feel free to contact us.
           </h1>

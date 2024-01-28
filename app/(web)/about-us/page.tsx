@@ -10,11 +10,11 @@ export default function Page() {
       <Hero backgroundImage={riverWarriorsHero} title='RIVER WARRIORS' />
       <section className='py-16 container'>
         <div>
-          <h1 className='text-primary font-medium text-4xl text-center'>
+          <h1 className='text-primary font-medium text-2xl md:text-4xl text-center'>
             Sungai Watch is an environmental organization on a mission to stop
             plastic from going into the ocean.
           </h1>
-          <p className='mt-8 text-primary text-xl text-center'>
+          <p className='mt-8 text-primary md:text-xl text-center'>
             We are a registered charity, both as a Yayasan in Indonesia and a
             501(c)3 in the United States. We are a certified One Percent for the
             Planet Environmental Partner.
@@ -31,12 +31,12 @@ export default function Page() {
           }}
         ></div>
         <div className='bg-[#BDD5FC] grid grid-cols-2 gap-4 px-12 md:col-span-1 col-span-2 py-8 md:py-0'>
-          <div className='flex items-center text-primary text-[32px] font-medium col-span-2 justify-start'>
+          <div className='flex items-center text-primary text-3xl font-medium col-span-2 justify-start'>
             Founders
           </div>
           <div></div>
           <div className='md:col-span-1 col-span-2 justify-center md:justify-start'>
-            <p className='text-primary text-lg font-medium'>
+            <p className='text-primary md:text-lg'>
               Founded in 2022 by Mr. Ngọc (right person) and Mr. Vĩ (left
               person) in Ho Chi Minh city, Vietnam. SaiGonXanh is now a team of
               100+ passionate river warriors, working every day to create
@@ -58,7 +58,7 @@ export default function Page() {
       </section>
       <section className='bg-green py-16'>
         <div className='container text-white'>
-          <h1 className='text-medium text-3xl'>Impact achieved:</h1>
+          <h1 className='text-medium text-2xl md:text-3xl'>Impact achieved:</h1>
           <p className='mt-8'>
             We are scaling rapidly and currently expanding our operation
             throughout Bali and in Java, Indonesia; the world&apos;s most populated
@@ -83,7 +83,7 @@ export default function Page() {
           We have more than 50 amazing river warriors that make this adventure
           possible.
         </h1>
-        <div className='grid grid-cols-4 md:grid-cols-8 mt-8 gap-6'>
+        <div className='grid grid-cols-4 md:grid-cols-8 mt-8 gap-2 md:gap-6'>
           {Array.from({ length: 78 }, (_, i) => i).map((item) => (
             <Image
               src={`/images/warriors/warrior-${item.toString()}.png`}
