@@ -1,6 +1,5 @@
-import { Button } from '@/components/ui/button'
 import { StaticImageData } from 'next/image'
-import RightArrowCircle from '../icons/RightArrowCircle'
+import CallOutButton from './CallOutButton'
 
 export default function CallOutCard({
   backgroundImage,
@@ -26,14 +25,7 @@ export default function CallOutCard({
         <h1 className='text-2xl text-white font-medium'>{title}</h1>
         <div className='flex items-center space-x-3 flex-wrap'>
           {buttonLabels?.map((label) => (
-            <Button
-              key={label}
-              size='lg'
-              className='mt-4 rounded-full flex items-center space-x-6 pr-2 hover:bg-white bg-white text-primary'
-            >
-              <span>{label}</span>
-              <RightArrowCircle className='text-primary' arrowColor='white' />
-            </Button>
+            <CallOutButton label={label} variant='secondary' />
           ))}
         </div>
       </div>

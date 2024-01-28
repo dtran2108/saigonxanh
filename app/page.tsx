@@ -14,6 +14,7 @@ import Instagram from './icons/Instagram'
 import Tiktok from './icons/Tiktok'
 import Youtube from './icons/Youtube'
 import LinkedIn from './icons/LinkedIn'
+import CallOutButton from './components/CallOutButton'
 
 export default function Home() {
   return (
@@ -76,13 +77,7 @@ export default function Home() {
               and our ocean.
             </p>
             <div className='flex items-center justify-center md:justify-start'>
-              <Button
-                size='lg'
-                className='mt-8 rounded-full flex items-center space-x-6 pr-2 hover:bg-primary'
-              >
-                <span>Learn more</span>
-                <RightArrowCircle className='text-white' arrowColor='#0B2B62' />
-              </Button>
+              <CallOutButton label='Learn more' />
             </div>
           </div>
         </div>
@@ -109,13 +104,7 @@ export default function Home() {
               on enforcing proper waste management at the local level.
             </p>
             <div className='flex items-center justify-center md:justify-start'>
-              <Button
-                size='lg'
-                className='mt-8 rounded-full flex items-center space-x-6 pr-2 hover:bg-primary'
-              >
-                <span>Learn more</span>
-                <RightArrowCircle className='text-white' arrowColor='#0B2B62' />
-              </Button>
+              <CallOutButton label='Learn more' />
             </div>
           </div>
         </div>
@@ -186,13 +175,7 @@ export default function Home() {
               <h1 className='text-2xl text-primary font-medium'>
                 Read our annual impact report
               </h1>
-              <Button
-                size='lg'
-                className='mt-4 rounded-full flex items-center space-x-6 pr-2 hover:bg-primary text-white'
-              >
-                <span>Read report</span>
-                <RightArrowCircle className='text-white' arrowColor='#0B2B62' />
-              </Button>
+              <CallOutButton label='Read report' />
             </div>
             <div className='min-h-[500px] w-full bg-[#82C341] rounded-md p-6 flex flex-col justify-end'>
               <h1 className='text-2xl text-primary font-medium'>

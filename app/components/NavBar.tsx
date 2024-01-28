@@ -5,8 +5,10 @@ import { Button } from '@/components/ui/button'
 
 export default function NavBar() {
   return (
-    <div className='px-4 py-2 flex items-center justify-between bg-white'>
-      <Image src={logo} width={150} height={70} alt='SGX Logo' />
+    <div className='px-4 py-2 flex items-center justify-between bg-white z-100'>
+      <Link href='/'>
+        <Image src={logo} width={150} height={70} alt='SGX Logo' />
+      </Link>
       <div className='flex items-center space-x-8 text-primary font-medium'>
         <Link href='/rivers'>RIVERS</Link>
         <Link href='/cleanups'>CLEANUPS</Link>
